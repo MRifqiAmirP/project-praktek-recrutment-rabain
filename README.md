@@ -8,7 +8,7 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 - **Lihat Daftar Dokter** - Menampilkan semua dokter dalam format grid yang responsif
 - **Edit Dokter** - Mengubah informasi dokter yang sudah terdaftar
 - **Hapus Dokter** - Menghapus data dokter dengan konfirmasi
-- **Penyimpanan Local Storage** - Data disimpan di localStorage browser (untuk development cepat, supaya tidak perlu setup database)
+- **Penyimpanan Local Storage** - Data disimpan di localStorage browser (untuk development dan development cepat, supaya tidak perlu setup database)
 
 ## Teknologi yang Digunakan
 
