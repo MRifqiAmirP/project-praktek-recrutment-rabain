@@ -22,13 +22,13 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 
 1. Clone atau download project ini
 2. Install dependencies:
-   \`\`\`
+   ```
    npm install
-   \`\`\`
+   ```
 3. Jalankan development server:
-   \`\`\`
+   ```
    npm run dev
-   \`\`\`
+   ```
 4. Buka browser dan akses `http://localhost:3000`
 
 ## Cara Menggunakan
@@ -54,7 +54,7 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 
 ## Struktur Utama
 
-\`\`\`
+```
 app/
 ├── page.tsx                 # Halaman utama aplikasi
 ├── layout.tsx              # Layout global
@@ -67,7 +67,7 @@ components/
 
 types/
 └── doctor.ts               # Type definitions untuk dokter
-\`\`\`
+```
 
 ## Komponen Utama
 
