@@ -8,14 +8,14 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 - **Lihat Daftar Dokter** - Menampilkan semua dokter dalam format grid yang responsif
 - **Edit Dokter** - Mengubah informasi dokter yang sudah terdaftar
 - **Hapus Dokter** - Menghapus data dokter dengan konfirmasi
-- **Penyimpanan Otomatis** - Data disimpan di localStorage browser (untuk development cepat, supaya tidak perlu setup database)
+- **Penyimpanan Local Storage** - Data disimpan di localStorage browser (untuk development cepat, supaya tidak perlu setup database)
 
 ## Teknologi yang Digunakan
 
-- **Next.js 15** - Framework React untuk aplikasi web
-- **TypeScript** - Untuk type safety dan development experience yang lebih baik
-- **Tailwind CSS** - Untuk styling yang responsif dan modern
-- **React Hooks** - Untuk state management (useState, useEffect)
+- **Next.js**
+- **TypeScript** 
+- **Tailwind CSS**
+- **React Hooks**
 - **localStorage** - Untuk penyimpanan data di browser
 
 ## Cara Menjalankan
@@ -52,7 +52,7 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 - Konfirmasi penghapusan pada dialog yang muncul
 - Dokter akan dihapus dari daftar
 
-## Struktur File
+## Struktur Utama
 
 \`\`\`
 app/
