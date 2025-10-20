@@ -1,4 +1,4 @@
-# Hospital Doctor CRUD Website
+# Doctor Management Website (Test Praktek Rekrutment RS Rabain 2025)
 
 Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Create, Read, Update, dan Delete (CRUD).
 
@@ -8,7 +8,7 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 - **Lihat Daftar Dokter** - Menampilkan semua dokter dalam format grid yang responsif
 - **Edit Dokter** - Mengubah informasi dokter yang sudah terdaftar
 - **Hapus Dokter** - Menghapus data dokter dengan konfirmasi
-- **Penyimpanan Otomatis** - Data disimpan di localStorage browser
+- **Penyimpanan Otomatis** - Data disimpan di localStorage browser (untuk development cepat, supaya tidak perlu setup database)
 
 ## Teknologi yang Digunakan
 
@@ -18,15 +18,18 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 - **React Hooks** - Untuk state management (useState, useEffect)
 - **localStorage** - Untuk penyimpanan data di browser
 
-## Informasi Dokter yang Disimpan
+## Cara Menjalankan
 
-Setiap dokter memiliki informasi berikut:
-- **Nama Dokter** - Nama lengkap dokter
-- **Spesialisasi** - Bidang keahlian (Umum, Bedah, Pediatri, Kardiologi, Neurologi, Ortopedi)
-- **Nomor Lisensi** - Nomor lisensi praktik dokter
-- **Email** - Alamat email untuk kontak
-- **Nomor Telepon** - Nomor telepon untuk kontak
-- **Tahun Pengalaman** - Jumlah tahun pengalaman praktik
+1. Clone atau download project ini
+2. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+3. Jalankan development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+4. Buka browser dan akses `http://localhost:3000`
 
 ## Cara Menggunakan
 
@@ -82,9 +85,8 @@ Komponen form modal untuk menambah atau mengedit data dokter dengan validasi inp
 Data dokter disimpan di **localStorage** browser dengan key `doctors`. Ini berarti:
 - Data akan tetap tersimpan meskipun browser ditutup
 - Data bersifat lokal per browser (tidak tersinkronisasi antar device)
-- Untuk aplikasi production, gunakan database seperti MySQL, PostgreSQL, atau MongoDB
 
-## Cara Mengintegrasikan dengan Database
+## Jika ingin menggunakan Database
 
 Jika ingin menggunakan database MySQL atau PostgreSQL:
 
@@ -96,39 +98,3 @@ Jika ingin menggunakan database MySQL atau PostgreSQL:
    - `DELETE /api/doctors/[id]` - Hapus dokter
 
 3. Update komponen untuk menggunakan API calls daripada localStorage
-
-## Validasi Form
-
-Form memiliki validasi untuk:
-- Semua field harus diisi
-- Email harus format yang valid
-- Nomor telepon harus berupa angka
-- Tahun pengalaman harus angka positif
-
-## Responsive Design
-
-Aplikasi dirancang untuk responsif di semua ukuran layar:
-- Mobile (< 640px)
-- Tablet (640px - 1024px)
-- Desktop (> 1024px)
-
-## Cara Menjalankan
-
-1. Clone atau download project ini
-2. Install dependencies:
-   \`\`\`bash
-   npm install
-   \`\`\`
-3. Jalankan development server:
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-4. Buka browser dan akses `http://localhost:3000`
-
-## Lisensi
-
-Project ini bebas digunakan untuk keperluan pribadi maupun komersial.
-
-## Kontak & Support
-
-Jika ada pertanyaan atau saran, silakan hubungi tim development.
