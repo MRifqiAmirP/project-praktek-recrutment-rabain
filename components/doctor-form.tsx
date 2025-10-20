@@ -177,7 +177,6 @@ export default function DoctorForm({ doctor, onSubmit, onClose }: DoctorFormProp
             {errors.experience && <p className="text-red-500 text-sm mt-1">{errors.experience}</p>}
           </div>
 
-          {/* Buttons */}
           <div className="flex gap-3 pt-4">
             <button
               type="button"

@@ -11,7 +11,6 @@ export default function Home() {
   const [editingDoctor, setEditingDoctor] = useState<Doctor | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
-  // Load doctors from localStorage on mount
   useEffect(() => {
     const savedDoctors = localStorage.getItem("doctors")
     if (savedDoctors) {
@@ -64,13 +63,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Manajemen Dokter</h1>
           <p className="text-gray-600">Rumah Sakit Dr. H. Muhammad Rabain</p>
         </div>
 
-        {/* Action Button */}
         <div className="mb-6">
           <button
             onClick={() => {
@@ -83,7 +80,6 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Form Modal */}
         {isFormOpen && (
           <DoctorForm
             doctor={editingDoctor}
@@ -92,7 +88,6 @@ export default function Home() {
           />
         )}
 
-        {/* Doctor List */}
         <DoctorList doctors={doctors} onEdit={handleEditDoctor} onDelete={handleDeleteDoctor} />
       </div>
     </main>
