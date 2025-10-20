@@ -22,11 +22,11 @@ Aplikasi web sederhana untuk mengelola data dokter rumah sakit dengan fitur Crea
 
 1. Clone atau download project ini
 2. Install dependencies:
-   \`\`\`bash
+   \`\`\`
    npm install
    \`\`\`
 3. Jalankan development server:
-   \`\`\`bash
+   \`\`\`
    npm run dev
    \`\`\`
 4. Buka browser dan akses `http://localhost:3000`
